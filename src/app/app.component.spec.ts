@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'ng-tooltip-demo' title`, () => {
+  it(`should have the 'testlib' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng-tooltip-demo');
+    expect(app.title).toEqual('testlib');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ng-tooltip-demo');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, testlib');
   });
 });
